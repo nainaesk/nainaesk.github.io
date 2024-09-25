@@ -408,7 +408,7 @@ button:hover {
   gap: 10px;
   align-items: center;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .casestudies__list {
     background-color: var(--dark-gray);
     justify-content: center;
@@ -428,6 +428,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 70px;
 }
 .workingprocess__card {
   border-radius: 45px;
@@ -482,3 +483,78 @@ button:hover {
     font-weight: 500;
   }
 }
+.team {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.team__list {
+  display: flex;
+  flex-direction: column;
+}
+.team__card {
+  border-radius: 30px;
+  border: solid 1px;
+  padding: 20px 18px;
+  margin-bottom: 2rem;
+  box-shadow: var(--dark-gray) 0px 5px 0px;
+}
+.team__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: solid 1px;
+}
+.team__card-profile-details{
+  margin-left: 5px;
+}
+.team__card-profile-details h4 {
+  margin: 0rem;
+  white-space: nowrap;
+  font-size: 18px;
+}
+.team__card-profile-details h4:first-of-type {
+  font-weight: 500;
+}
+.team__card-icon {
+  align-self: flex-start;
+  height: 25px;
+  width: 25px;
+}
+.team__card-body p {
+  font-size: 16px;
+}
+.team__button {
+  margin-top: 1rem;
+  align-self: flex-end;
+}
+.team__card-profilepic {
+  height: 70px;
+  width: 70px;
+}
+@media only screen and (min-width: 1024px) {
+  .team__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .team__card {
+    padding: 40px 35px;
+  }
+  .team__card-body p {
+    width: 317px;
+    font-size: 18px;
+  }
+  .team__card-profilepic {
+    height: 106px;
+    width: 105px;
+  }
+  .team__card-icon {
+    height: 34px;
+    width: 34px;
+  }
+}
+/* Container styling */

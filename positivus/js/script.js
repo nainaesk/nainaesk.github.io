@@ -22,3 +22,20 @@ const swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+function toggleExpand(event, cardId, iconId) {
+    const card = document.getElementById(cardId);
+    const cardBody = card.querySelector('.workingprocess__card-body');
+    const icon = document.getElementById(iconId);
+
+    cardBody.classList.toggle('expanded');
+    card.classList.toggle('active');
+
+
+    if (cardBody.classList.contains('expanded')) {
+        console.log("check")
+        icon.src = "./icons/minus-icon.svg";
+    } else {
+        icon.src = "./icons/plus-icon.svg";
+    }
+}

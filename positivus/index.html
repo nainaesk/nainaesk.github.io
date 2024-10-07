@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -396,6 +397,82 @@
                 <p class="section__description">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
                     about Our Digital Marketing Services</p>
             </div>
+            <div class="testimonial__slider">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div>
+                                <blockquote class="speech-bubble">
+                                    "We have been working with Positivus for the past year and have seen a significant
+                                    increase in website traffic and leads as a result of their efforts. The team is
+                                    professional, responsive, and truly cares about the success of our business. We
+                                    highly recommend Positivus to any company looking to grow their online presence."
+                                </blockquote>
+                                <span class="text--neon-green">John Smith</span> <br>
+                                <span>Marketing Director at XYZ Corp</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div>
+                                <blockquote class="speech-bubble">
+                                    "We have been working with Positivus for the past year and have seen a significant
+                                    increase in website traffic and leads as a result of their efforts. The team is
+                                    professional, responsive, and truly cares about the success of our business. We
+                                    highly recommend Positivus to any company looking to grow their online presence."
+                                </blockquote>
+                                <span class="text--neon-green">John Smith</span> <br>
+                                <span>Marketing Director at XYZ Corp</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div>
+                                <blockquote class="speech-bubble">
+                                    "We have been working with Positivus for the past year and have seen a significant
+                                    increase in website traffic and leads as a result of their efforts. The team is
+                                    professional, responsive, and truly cares about the success of our business. We
+                                    highly recommend Positivus to any company looking to grow their online presence."
+                                </blockquote>
+                                <span class="text--neon-green">John Smith</span> <br>
+                                <span>Marketing Director at XYZ Corp</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <blockquote class="speech-bubble">
+                                    "We have been working with Positivus for the past year and have seen a significant
+                                    increase in website traffic and leads as a result of their efforts. The team is
+                                    professional, responsive, and truly cares about the success of our business. We
+                                    highly recommend Positivus to any company looking to grow their online presence."
+                                </blockquote>
+                                <span class="text--neon-green">John Smith</span> <br>
+                                <span>Marketing Director at XYZ Corp</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
 
         </section>
         <section class="contact">
@@ -405,14 +482,14 @@
             </div>
             <div class="contact__form">
                 <form>
-                    <div class="flex-row">
-                        <div>
-                              <input type="radio" id="sayhi" name="sayhi" value="sayhi">
-                              <label for="sayhi">Say Hi</label>
+                    <div class="flex-row contact__form-radio">
+                        <div class="form-group">
+                            <input type="radio" id="sayhi" name="sayhi" value="sayhi">
+                            <label for="sayhi">Say Hi</label>
                         </div>
-                        <div>
-                              <input type="radio" id="quote" name="quote" value="quote">
-                              <label for="quote">Get a quote</label>
+                        <div class="form-group">
+                            <input type="radio" id="quote" name="quote" value="quote">
+                            <label for="quote">Get a quote</label>
                         </div>
                     </div>
                     <div class="form-group">
@@ -423,22 +500,22 @@
                         <label for="email">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="Email">
                     </div>
-                    <div class="form-group">
-                        <label for="message">Email</label>
+                    <div class="flex-col">
+                        <label for="message">Message</label>
                         <textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
+                    </div>
                 </form>
             </div>
             <button class="btn--filled">Send Message</button>
         </section>
         <section class="footer">
-            <div class="header__nav">
+            <div class="flex-wrap">
                 <img src="./img/positivus-logo-white.svg" alt="logo" class="logo">
-                <div class="header__nav hide-sm">
-                    <a class="header__nav-item" href="">About</a>
-                    <a class="header__nav-item" href="">Services</a>
-                    <a class="header__nav-item" href="">Use Cases</a>
-                    <a class="header__nav-item" href="">Pricing</a>
-                    <a class="header__nav-item" href="">Blog</a>
+                <div class="flex-wrap">
+                    <a class="nav-item" href="">About us</a>
+                    <a class="nav-item" href="">Services</a>
+                    <a class="nav-item" href="">Use Cases</a>
+                    <a class="nav-item" href="">Pricing</a>
                 </div>
                 <div class="header__nav hide-sm">
                     <img src="./img/linkedin.svg" alt="linkedin">
@@ -470,7 +547,19 @@
     </div>
     <script src="./js/script.js"></script>
     <script>
+        $(document).ready(function () {
+            $('#myCarousel').carousel({
+                interval: 100000 // Set the interval for auto sliding (in milliseconds)
+            });
 
+            $('#myCarousel').on('mouseenter', function () {
+                $(this).carousel('pause');
+            });
+
+            $('#myCarousel').on('mouseleave', function () {
+                $(this).carousel('cycle');
+            });
+        });
     </script>
 </body>
 

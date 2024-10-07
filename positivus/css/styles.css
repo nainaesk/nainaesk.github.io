@@ -30,6 +30,15 @@ html,body {
 .bg-light-grey {
   background-color: var(--light-gray) !important;
 }
+.text--dark-grey {
+  color: var(--dark-gray);
+}
+.text--neon-green {
+  color: var(--neon-green);
+}
+.text--light-grey {
+  color: var(--light-gray);
+}
 
 h1 {
   font-size: clamp(36px,4vw,60px);
@@ -420,9 +429,6 @@ button:hover {
     border-radius: 0;
     border-right: 1px solid var(--light-gray);
   }
-  .casestudies__card-description {
-    height: 138px;
-  }
 }
 .workingprocess {
   display: flex;
@@ -545,7 +551,7 @@ button:hover {
     padding: 40px 35px;
   }
   .team__card-body p {
-    width: 317px;
+    width: 300px;
     font-size: 18px;
   }
   .team__card-profilepic {
@@ -556,5 +562,135 @@ button:hover {
     height: 34px;
     width: 34px;
   }
+}
+.testimonials {
+  margin-bottom: 140px;
+}
+
+.speech-bubble {
+  position: relative; /* Needed to position the arrow */
+  border: solid var(--neon-green) 1px;
+  max-width: 606px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+blockquote {
+  font-size: 14px;
+}
+.testimonial__slider {
+  background-color: var(--dark-gray);
+  padding: 70px 30px;
+  color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  font-size: 14px;
+}
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  right: -38px;
+}
+.carousel-control.left {
+  left: -38px;
+}
+.carousel-indicators {
+  bottom: -60px;
+}
+@media only screen and (min-width: 768px) {
+  .carousel-control.right {
+    right: -60px;
+  }
+  .carousel-control.left {
+    left: -60px;
+  }
+}
+@media only screen and (min-width: 1124px) {
+  .carousel, .carousel-inner  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .carousel-control.right {
+    right: -98px;
+  }
+  .carousel-control.left {
+    left: -98px;
+  }
+  blockquote {
+    font-size: 16px;
+  }
+  .testimonial__slider {
+    font-size: 16px ;
+  }
+}
+.contact {
+}
+.contact__form {
+  padding: 25px;
+  background-color: var(--light-gray);
+  border-radius: 45px;
+}
+.contact__form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact button {
+  width: 100%;
+  margin-top: 20px;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact__form label {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input[type="radio"]:checked {
+  border-color: var(--neon-green); /* Border color for checked state */
+  accent-color: var(--neon-green);
+}
+.form-control, textarea {
+  border: 1px solid var(--dark-gray);
+  border-radius: 14px;
+}
+.form-control {
+  height: 60px;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  margin-top: 70px;
+  background-color: var(--black);
+  color: var(--light-gray);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer a{
+  color: var(--light-gray);
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-wrap .logo {
+  margin-bottom: 20px;
 }
 /* Container styling */

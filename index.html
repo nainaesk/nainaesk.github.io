@@ -4,12 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Naina's Portfolio</title>
+
+    <link rel="icon" type="image/png" href="./assets/favicon-h0bboa3_.png">
+  <script type="module" crossorigin src="./assets/index-kV3t73G4.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BZ5twvBt.css">
 </head>
 
 <body>
-    <a href="password-generator/index.html">Password Generator</a>
-    <a href="cozy-room/index.html">Cozy Room</a>
+    <div id="loader" class="loader">Loading...</div>
+    <canvas class="webgl"></canvas>
+
+    <header>
+        <nav>
+            <div class="logo">NES</div>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <h1>Hi, I'm Naina</h1>
+        <p>Full stack developer and web designer</p>
+        <a href="#projects" class="btn">Explore Now</a>
+    </section>
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="row">
+            <div class="project animate1">
+                <h3>Rentkindly</h3>
+                <a href="https://www.rentkindly.com/" target="_blank">
+                    <img class="project-image" src="./images/rentkindly1.png" alt="" srcset="" height="300">
+                </a>
+                <p>A property management platform with rent tracking, tenant management, e-signing, and service provider
+                    integration for seamless real estate operations.</p>
+            </div>
+
+            <div class="project animate1">
+                <h3>Invigro</h3>
+                <a href="https://invigro.com/" target="_blank">
+                    <img class="project-image" src="./images/invigro1.png" alt="" srcset="" height="300">
+                </a>
+                <p>An e-commerce platform for high-quality dog food, combining intuitive UI/UX with efficient supply
+                    chain management. I developed the frontend, product listings, and checkout experience, optimizing
+                    for performance and usability.</p>
+            </div>
+
+            <div class="project animate1">
+                <h3>Credit3</h3>
+                <img class="project-image" src="./images/credit31.png" alt="" srcset="" height="300">
+                <p>A construction material procurement platform streamlining orders, inventory, and supplier management.
+                    I contributed to the frontend, creating an intuitive dashboard for real-time tracking and
+                    transactions.</p>
+            </div>
+
+            <div class="project animate1">
+                <h3>CoinAccount</h3>
+                <img class="project-image" src="./images/coinaccount1.png" alt="" srcset="" height="300">
+                <p>A crypto portfolio tracker offering tax report generation, real-time balance updates, transaction
+                    history, and multi-wallet integration. I developed the frontend UI with interactive charts and live
+                    data updates for seamless financial monitoring.</p>
+            </div>
+
+            <div class="project animate1">
+                <h3>SplitNice</h3>
+                <img class="project-image" src="./images/splitnice1.png" alt="" srcset="" height="300">
+                <p>A smart expense-splitting tool that simplifies shared payments among friends, roommates, or
+                    colleagues.</p>
+            </div>
+            <div class="project animate1">
+                <h3>My personal portfolio</h3>
+                <img class="project-image" src="./images/portfolio.png" alt="" srcset="" height="300">
+                <p>Built with Three.js</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h1>Contact</h1>
+        <div class="row">
+
+            <form class="animate" action="">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
 </body>
 
 </html>
